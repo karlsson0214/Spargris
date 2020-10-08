@@ -26,7 +26,7 @@ namespace DemoSpargris
             // sätt in pengar
             grisen.belopp = 10;
             Print();
-            // Ägare:
+            // Ägare: Ada
             // innehåller 10 kr
             // men vill att det måste finnas en ägare
 
