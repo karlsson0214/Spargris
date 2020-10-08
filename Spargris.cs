@@ -4,9 +4,18 @@ namespace DemoSpargris
 {
     class Spargris
     {
-        public string ägare;
+        // objektvariabler
+        // private istället för public
+        private string ägare;
         public int belopp;
 
+        // konstruktor - ny
+        public Spargris(string namn)
+        {
+            ägare = namn;
+        }
+
+        // metoder
         public void Print()
         {
             Console.WriteLine("Ägare: " + ägare);
