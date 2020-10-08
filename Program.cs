@@ -13,16 +13,17 @@ namespace DemoSpargris
             // går att tömma grisen
             // går inte att ta ut lite av innehållet
 
-            Spargris adasGris = new Spargris();
+            Spargris adasGris = new Spargris("Ada");
 
             // sätt in pengar
             adasGris.belopp = 10;
             adasGris.Print();
-            // Ägare:
+            // Ägare: Ada
             // innehåller 10 kr
             // men vill att det måste finnas en ägare
+            // Löst - nu finns ägare
 
-            adasGris.ägare = "Ada";
+            // adasGris.ägare = "Ada";
 
             // sätt in mer pengar
             adasGris.belopp = adasGris.belopp + 30;  // lite bökigt
