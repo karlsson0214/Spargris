@@ -4,14 +4,24 @@ namespace DemoSpargris
 {
     class Spargris
     {
-        // objektvariabler
+        // objektvariabler - nytt privata
         private string ägare;
         private int belopp;
 
-        // konstruktor - ny
+        // konstruktor
         public Spargris(string namn)
         {
             ägare = namn;
+        }
+        
+        // metoder - nya
+        public string GetÄgare()
+        {
+            return ägare;
+        }
+        public int GetBelopp()
+        {
+            return belopp;
         }
     }
 }
