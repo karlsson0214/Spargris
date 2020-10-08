@@ -23,5 +23,12 @@ namespace DemoSpargris
         {
             return belopp;
         }
+        public void SättIn(int insättning)
+        {
+            if (insättning > 0)
+            {
+                belopp = belopp + insättning;
+            }
+        }
     }
 }
