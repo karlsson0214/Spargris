@@ -24,47 +24,46 @@ namespace DemoSpargris
             // går inte att ta ut lite av innehållet
 
             // sätt in pengar
-            grisen.belopp = 10;
+            grisen.SättIn(10);
             Print();
             // Ägare: Ada
             // innehåller 10 kr
-            // men vill att det måste finnas en ägare
 
-            grisen.ägare = "Beda";
+            // ägare är privat så nedanstående går inte längre
+            //grisen.ägare = "Beda";
 
             // sätt in mer pengar
-            grisen.belopp = grisen.belopp + 30;  // lite bökigt
+            grisen.SättIn(30);  // lite bökigt, nu smidigt
             Print();
-            // Ägare: Beda
+            // Ägare: Ada
             // innehåll: 40 kr
-            // Oj, bytte ägare
 
             // sätt in mer pengar
-            grisen.belopp = 5;
+            grisen.SättIn(5);
             Print();
-            // Ägare: Beda
-            // innehåll: 5 kr
-            // Oj, nu försvann 40 kr
+            // Ägare: Ada
+            // innehåll: 45 kr
+            // ok nu inget försvinner
 
             // sätt in mer pengar
-            grisen.belopp = -2;
+            grisen.SättIn(-2);
             Print();
-            // Ägare: Beda
-            // innehåll: 3 kr
-            // Oj, kan ta ut pengar
+            // Ägare: Ada
+            // innehåll: 45 kr
+            // ok, kan inte ta ut pengar
 
             // sätt in mer pengar
-            grisen.belopp = -100;
+            grisen.SättIn(-100);
             Print();
-            // Ägare: Beda
-            // innehåll: -98 kr
-            // Oj, kan ta ut mer än det finns
+            // Ägare: Ada
+            // innehåll: 45 kr
+            // ok, kan inte ta ut pengar
         }
         // hjälpmetod för att skriva ut information om en spargris
         private void Print()
         {
-            Console.WriteLine("Ägare: " + grisen.ägare);
-            Console.WriteLine("innehåll: " + grisen.belopp + " kr");
+            Console.WriteLine("Ägare: " + grisen.GetÄgare());
+            Console.WriteLine("innehåll: " + grisen.GetBelopp() + " kr");
         }
 
     }
