@@ -5,8 +5,8 @@ namespace DemoSpargris
     class Spargris
     {
         // objektvariabler
-        public string ägare;
-        public int belopp;
+        private string ägare;
+        private int belopp;
 
         // konstruktor - ny
         public Spargris(string namn)
