@@ -62,8 +62,8 @@ namespace DemoSpargris
         // hjälpmetod för att skriva ut information om en spargris
         private void Print()
         {
-            Console.WriteLine("Ägare: " + grisen.GetÄgare());
-            Console.WriteLine("innehåll: " + grisen.GetBelopp() + " kr");
+            Console.WriteLine("Ägare: " + grisen.Ägare);
+            Console.WriteLine("innehåll: " + grisen.Belopp + " kr");
         }
 
     }
