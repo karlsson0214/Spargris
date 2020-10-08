@@ -4,7 +4,7 @@ namespace DemoSpargris
 {
     class Spargris
     {
-        // objektvariabler - nytt privata
+        // objektvariabler
         private string ägare;
         private int belopp;
 
@@ -14,15 +14,31 @@ namespace DemoSpargris
             ägare = namn;
         }
         
-        // metoder - nya
-        public string GetÄgare()
+        
+        // bytt två metoder mot properties
+        public string Ägare
         {
-            return ägare;
+            get 
+            {
+                return ägare;
+            }
+            private set
+            {
+                ägare = value;
+            }
         }
-        public int GetBelopp()
+        public int Belopp
         {
-            return belopp;
+            get
+            {
+                return belopp;
+            }
+            private set
+            {
+                belopp = value;
+            }
         }
+        // metoder
         public void SättIn(int insättning)
         {
             if (insättning > 0)
